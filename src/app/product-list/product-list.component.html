@@ -1,4 +1,37 @@
-<h2>Products</h2>
+<h2>products list</h2>
+<div style ="background-color:yellow"
+*ngFor="let product of products">
+
+<!--<h3>
+    Id:  {{ product.id }} <br/>
+    Name: {{product.name}} <br/>
+    Price: {{product.price}} <br/>
+    Description:{{product.description}}-->
+    
+   <h1>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+      </a>
+      </h1>
+
+      <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()">
+    Share
+  </button>
+  
+  <app-product-alerts
+  [product]="product">
+</app-product-alerts>
+    
+    
+     
+  <!--</h3>-->
+  
+  </div>
+
 
 
 <!-- 
