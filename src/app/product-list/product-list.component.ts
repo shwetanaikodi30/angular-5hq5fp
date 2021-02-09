@@ -14,6 +14,9 @@ export class ProductListComponent {
   share() {
     window.alert('The list of products !');
   }
+  onNotify() {
+    window.alert('You will be notified when the products are available');
+  }
 }
 
 
