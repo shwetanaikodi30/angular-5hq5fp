@@ -15,12 +15,14 @@ export class ProductDetailsComponent implements OnInit {
       console.log("constructor");
    }
 ngOnInit(): void {
-  console.log("ngOnInit()");
-throw new Error('Method not implemented.');
- const routeParams = this.route.snapshot.paramMap;
+  const routeParams = this.route.snapshot.paramMap;
   const productIdFromRoute = Number(routeParams.get('productId'));
-  this.product = products.find(product => product.id === productIdFromRoute);
-  console.log(this.product);
+
+
+  this.product = products.find(product => product.id =productIdFromRoute);
+  console.log("ngOnInit()");
+//throw new Error('Method not implemented.');
+
 
 
 }
