@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { products } from '../products';
 import { Output, EventEmitter } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
