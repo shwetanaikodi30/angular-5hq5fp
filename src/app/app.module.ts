@@ -12,15 +12,18 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MyTopBarComponent } from './my-top-bar/my-top-bar.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component:CartComponent},
+         { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
@@ -31,6 +34,7 @@ import { MyTopBarComponent } from './my-top-bar/my-top-bar.component';
     ProductDetailsComponent,
     CartComponent,
     MyTopBarComponent,
+    ShippingComponent,
   
   ],
   bootstrap: [
