@@ -22,13 +22,14 @@ ngOnInit(): void {
 
 
   this.product = products.find(product => product.id =productIdFromRoute);
-  console.log("ngOnInit()");
+  console.log("this.product");
 //throw new Error('Method not implemented.');
 
 }
 addToCart(product){
   this.cartService.addToCart(product);
   window.alert("product is added to the cart");
+    console.log("addToCart(product) from ProductDetailsComponent");
   
 }
 

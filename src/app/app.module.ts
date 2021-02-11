@@ -10,6 +10,7 @@ import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 import { MyTopBarComponent } from './my-top-bar/my-top-bar.component';
 
 @NgModule({
